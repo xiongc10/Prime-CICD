@@ -17,4 +17,9 @@ def generate_primes(n):
 
 if __name__ == "__main__":
     n = int(input("Enter the number of primes to generate: "))
-    print(f"First {n} prime numbers: {generate_primes(n)}")
+    output = (f"First {n} prime numbers: {generate_primes(n)}")
+
+with open("output.txt", "w") as file:
+    file.write(output)
+
+    print(output)
